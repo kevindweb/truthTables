@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Truth Tables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="ui header">Truth Tables</h1>
+        <div class="ui segment">
+            <p>This page is used for creating logic tables. You can use them to test the validity of a equivalence statements. An example is listed below!<br/></p>
+        </div>
+        <div class="ui action input">
+            <input id="equation" type="text" placeholder="Equation...">
+            <button id="runEquation" class="ui button">Create Table</button>
+        </div>
+        <div class="ui negative message transition hidden">
+            <i class="close icon"></i>
+            <div class="header">
+                Error Occured
+            </div>
+            <p id="errorMessage">Message</p>
+        </div>
+        <div class="truth">
+            <table class="ui celled table">
+                <thead>
+                    <tr id="headers">
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+        <h5 class="ui top attached header">Accepted Operators</h5>
+        <div class="ui attached segment">
+          <p>AND = &&nbsp;&nbsp;&nbsp;&nbsp;OR = |</p>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;NOT - !
+            add functionality for not later -->
+        </div>
+    </div>
+</body>
+
+</html>
